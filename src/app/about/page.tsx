@@ -2,6 +2,8 @@ import Image, { StaticImageData } from 'next/image'
 import people from 'public/people.svg'
 import michaelLan from 'public/michael_lan.jpg'
 import ericLan from 'public/eric_lan.jpg'
+import johnnyWang from 'public/johnny_wang.jpg'
+import chrisWang from 'public/chris_wang.jpg'
 import srinidhiRaghavendran from 'public/srinidhi_raghavendran.jpg'
 import ojusGarg from 'public/ojus_garg.jpg'
 import benjaminMann from 'public/benjamin_mann.jpg'
@@ -11,11 +13,13 @@ import Balancer from 'react-wrap-balancer'
 enum Tag {
   Python,
   AMC10,
+  APPhysics1,
   GitGitHub,
   APCSA,
   CurrentInstructor,
   RetiredInstructor,
   GameDev,
+  Robotics
 }
 
 const tagInfo = (tag: Tag) => {
@@ -34,6 +38,10 @@ const tagInfo = (tag: Tag) => {
       return ['bg-indigo-500', '🕊️ Git + GitHub']
     case Tag.APCSA:
       return ['bg-red-400', '☕ AP CSA']
+    case Tag.Robotics:
+      return ['bg-fuchsia-400', '🤖 Robotics']
+    case Tag.APPhysics1:
+      return ['bg-teal-400', '⚙️  AP Physics 1']
   }
 }
 
@@ -104,10 +112,10 @@ const About = () => {
             name="Michael"
             subtitle="Advisor, Instructor"
             avatar={michaelLan}
-            tags={[Tag.CurrentInstructor, Tag.Python, Tag.GitGitHub, Tag.APCSA]}
+            tags={[Tag.CurrentInstructor, Tag.GitGitHub, Tag.APCSA]}
           >
             Michael is a second-year at UCLA majoring in computer science and minoring in philosophy. His research interests include functional programming, programming language design, and compilers.
-            He also love software engineering and has 2+ years of experience in full-stack software development and DevOps using modern technologies.
+            He also love software engineering and has 2+ years of experience in full-stack software development and DevOps.
           </Card>
           <Card
             name="Eric"
@@ -116,6 +124,22 @@ const About = () => {
             tags={[Tag.CurrentInstructor, Tag.APCSA]}
           >
             Eric is a junior at Irvington High School. He is interested in scripting, modeling, and graphic design. In his free time, Eric enjoys hiking, gaming, photography, and pondering life&apos;s big questions.
+          </Card>
+          <Card
+            name="Johnny"
+            subtitle="Instructor"
+            avatar={johnnyWang}
+            tags={[Tag.CurrentInstructor, Tag.Robotics]}
+          >
+            Johnny is a sophomore at Valley Christian High School that likes programming, robotics, and football. He has 2 years of  programming experience and 3 years of robotics experience. Johnny is currently the programming mentor for 2 middle school robotics teams and seeks to pass on his programming knowledge.
+          </Card>
+          <Card
+            name="Chris"
+            subtitle="Instructor"
+            avatar={chrisWang}
+            tags={[Tag.CurrentInstructor, Tag.AMC10, Tag.APPhysics1]}
+          >
+            Chris is a junior at Mission San Jose High School. He is interested in a variety of STEM related topics such as mathematics, reading, science, and especially astronomy. He enjoys witnessing the wonders of the natural world and outer space. Chris is also one who is always willing to help out others or the community. During his free time, he likes to hang out with his friends or exercise.
           </Card>
           <Card
             name="Sri"
