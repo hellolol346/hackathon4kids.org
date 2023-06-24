@@ -32,6 +32,11 @@ export default function Home() {
             <a href="https://forms.gle/ou5o62fdUXCHUzxA8" target="_blank" className="px-4 py-2 bg-blue-700 text-white rounded-lg">Join our mailing list!</a>
             <Link href="/about#instructors" className="px-4 py-2 bg-gray-100 rounded-lg">See our team <CaretRightIcon className="inline-block -translate-y-0.5" /></Link>
           </div>
+          <hr className="mt-8 mb-4" />
+          <p className="p-3 rounded-md bg-blue-50">
+            <InfoCircledIcon className="text-blue-400 text-md inline-block -translate-y-0.5 mr-2" />
+            Registration for Summer 2023 is open. View our flyer <Link target="__blank" href="/flyer-summer-2023.png" className="underline">here</Link>!
+          </p>
         </div>
         <Image
           src={girlWorkplace}
