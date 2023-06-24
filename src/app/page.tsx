@@ -21,7 +21,7 @@ export default function Home() {
               with Hackathon4Kids.
             </Balancer>
           </h1>
-          <p className="text-gray-600 text-xl mb-8">
+          <p className="text-gray-600 text-xl mb-6">
             <Balancer>
               We help younger kids build strong computer science fundamentals through free
               face-to-face classes and virtual classes. All donations go towards assisting
