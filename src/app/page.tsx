@@ -28,12 +28,9 @@ export default function Home() {
               underprivileged children.
             </Balancer>
           </p>
-          <a href="https://forms.gle/ou5o62fdUXCHUzxA8" target="_blank" className="px-4 py-2 bg-blue-700 text-white rounded-lg mr-4">Join our mailing list!</a>
-          <Link href="/about#instructors" className="px-4 py-2 bg-gray-100 rounded-lg">See our team <CaretRightIcon className="inline-block -translate-y-0.5" /></Link>
-          <hr className="mt-8 mb-4" />
-          <div className="p-3 rounded-md bg-blue-50 flex flex-row items-center gap-2 flex-wrap">
-            <InfoCircledIcon className="text-blue-400 text-md" />
-            <p>Registration for Summer 2023 is open. View our flyer <Link target="__blank" href="/flyer-summer-2023.png" className="underline">here</Link>!</p>
+          <div className="flex flex-row flex-wrap gap-4">
+            <a href="https://forms.gle/ou5o62fdUXCHUzxA8" target="_blank" className="px-4 py-2 bg-blue-700 text-white rounded-lg">Join our mailing list!</a>
+            <Link href="/about#instructors" className="px-4 py-2 bg-gray-100 rounded-lg">See our team <CaretRightIcon className="inline-block -translate-y-0.5" /></Link>
           </div>
         </div>
         <Image
