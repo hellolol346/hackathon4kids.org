@@ -66,7 +66,7 @@ const Card = ({ name, children, avatar, tags, subtitle }: CardProps) => {
           tags.map((tag) => {
             const [color, text] = tagInfo(tag)
             return (
-              <span className={`rounded-md px-2 py-0.5 text-sm text-white ${color}`}>{text}</span>
+              <span key={tag} className={`rounded-md px-2 py-0.5 text-sm text-white ${color}`}>{text}</span>
             )
           })
         }
@@ -75,7 +75,7 @@ const Card = ({ name, children, avatar, tags, subtitle }: CardProps) => {
   )
 }
 
-export default () => {
+const About = () => {
   return (
     <main className="mx-5 md:mx-24 mt-10 text-blue-950">
       <section className="mb-6">
@@ -115,7 +115,7 @@ export default () => {
             avatar={ericLan}
             tags={[Tag.CurrentInstructor, Tag.APCSA]}
           >
-            Eric is a junior at Irvington High School. He is interested in scripting, modeling, and graphic design. In his free time, Eric enjoys hiking, gaming, photography, and pondering life's big questions.
+            Eric is a junior at Irvington High School. He is interested in scripting, modeling, and graphic design. In his free time, Eric enjoys hiking, gaming, photography, and pondering life&apos;s big questions.
           </Card>
           <Card
             name="Sri"
@@ -140,7 +140,7 @@ export default () => {
             tags={[Tag.RetiredInstructor, Tag.GameDev]}
           >
             Ben is a programmer and creative coder. He enjoys developing web apps and games, and has been
-            learning programming for 4+ years. He's experienced in Javascript, Python, C#, and Java.
+            learning programming for 4+ years. He&apos;s experienced in Javascript, Python, C#, and Java.
             In his free time he like playing badminton and experimenting with things on his computer
             like digital art, music production, photo manipulation, Android development, along with many other things.
           </Card>
@@ -161,3 +161,5 @@ export default () => {
     </main>
   )
 }
+
+export default About

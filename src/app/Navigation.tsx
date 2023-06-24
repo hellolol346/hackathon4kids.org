@@ -4,7 +4,7 @@ import * as NavigationMenu from '@radix-ui/react-navigation-menu'
 import Image from 'next/image'
 import logo from 'public/logo.png'
 
-export default () => (
+const Navigation = () => (
   <NavigationMenu.Root className="flex flex-col md:flex-row justify-between px-5 md:px-24 pt-4">
     <NavigationMenu.List className="flex flex-row gap-4 text-lg">
       <NavigationMenu.Item>
@@ -69,3 +69,5 @@ export default () => (
     </NavigationMenu.List>
   </NavigationMenu.Root >
 )
+
+export default Navigation

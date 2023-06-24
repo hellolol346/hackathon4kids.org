@@ -1,4 +1,4 @@
-export default () => {
+const Footer = () => {
   return (
     <div className="bg-gray-100 py-8">
       <p className="mt-auto text-center text-gray-600 mb-2 mx-5">
@@ -16,3 +16,5 @@ export default () => {
     </div>
   )
 }
+
+export default Footer
