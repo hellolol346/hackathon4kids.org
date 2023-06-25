@@ -1,91 +1,15 @@
-import Image, { StaticImageData } from 'next/image'
+import Image from 'next/image'
 import people from 'public/people.svg'
-import michaelLan from 'public/michael_lan.jpg'
-import ericLan from 'public/eric_lan.jpg'
-import eganWang from 'public/egan_wang.jpg'
-import johnnyWang from 'public/johnny_wang.jpg'
-import chrisWang from 'public/chris_wang.jpg'
-import srinidhiRaghavendran from 'public/srinidhi_raghavendran.jpg'
-import ojusGarg from 'public/ojus_garg.jpg'
-import benjaminMann from 'public/benjamin_mann.jpg'
-import rohanGulati from 'public/rohan_gulati.jpg'
 import Balancer from 'react-wrap-balancer'
-
-enum Tag {
-  Python,
-  AMC10,
-  AMC8,
-  APPhysics1,
-  GitGitHub,
-  APCSA,
-  CurrentInstructor,
-  RetiredInstructor,
-  GameDev,
-  Robotics
-}
-
-const tagInfo = (tag: Tag) => {
-  switch (tag) {
-    case Tag.CurrentInstructor:
-      return ['bg-amber-500', '💪 current team']
-    case Tag.RetiredInstructor:
-      return ['bg-stone-400', '🎓 retired']
-    case Tag.Python:
-      return ['bg-lime-500', '🐍 Python']
-    case Tag.GameDev:
-      return ['bg-violet-600', '👾 Game Development']
-    case Tag.AMC10:
-      return ['bg-orange-500', '✏️ AMC 10']
-    case Tag.AMC8:
-      return ['bg-orange-500', '✏️ AMC 8']
-    case Tag.GitGitHub:
-      return ['bg-indigo-500', '🕊️ Git + GitHub']
-    case Tag.APCSA:
-      return ['bg-red-400', '☕ AP CSA']
-    case Tag.Robotics:
-      return ['bg-fuchsia-400', '🤖 Robotics']
-    case Tag.APPhysics1:
-      return ['bg-teal-400', '⚙️  AP Physics 1']
-  }
-}
-
-interface CardProps {
-  name: string;
-  subtitle: string;
-  avatar: StaticImageData;
-  children: React.ReactNode;
-  tags: Tag[];
-}
-
-const Card = ({ name, children, avatar, tags, subtitle }: CardProps) => {
-  return (
-    <div className="rounded-lg p-5 w-full border border-gray-200">
-      <div className="flex flex-row items-center gap-4 mb-4">
-        <Image
-          src={avatar}
-          alt={`Image of ${name}`}
-          className="w-20 rounded-3xl"
-        />
-        <div>
-          <h3 className="text-2xl font-bold">{name}</h3>
-          <p className="text-gray-600">{subtitle}</p>
-        </div>
-      </div>
-      <p>{children}</p>
-      <hr className="mt-3 mb-4" />
-      <div className="flex flex-row flex-wrap gap-2">
-        {
-          tags.map((tag) => {
-            const [color, text] = tagInfo(tag)
-            return (
-              <span key={tag} className={`rounded-md px-2 py-0.5 text-sm text-white ${color}`}>{text}</span>
-            )
-          })
-        }
-      </div>
-    </div>
-  )
-}
+import EricLanCard from './EricLan'
+import ChrisWangCard from './ChrisWang'
+import JohnnyWangCard from './JohnnyWang'
+import MichaelLanCard from './MichaelLan'
+import EganWangCard from './EganWang'
+import BenManCard from './BenMan'
+import SrinidhiRaghavendranCard from './SrinidhiRaghavendran'
+import OjusGargCard from './OjusGarg'
+import RohanGulatiCard from './RohanGulati'
 
 const About = () => {
   return (
@@ -112,89 +36,15 @@ const About = () => {
       <section id="instructors">
         <h1 className="text-3xl font-semibold">Our Instructors</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 mt-3">
-          <Card
-            name="Chris"
-            subtitle="Instructor"
-            avatar={chrisWang}
-            tags={[Tag.CurrentInstructor, Tag.AMC10, Tag.APPhysics1]}
-          >
-            Chris is a junior at Mission San Jose High School. He is interested in a variety of STEM related topics such as mathematics, reading, science, and especially astronomy. He enjoys witnessing the wonders of the natural world and outer space. Chris is also one who is always willing to help out others or the community. During his free time, he likes to hang out with his friends or exercise.
-          </Card>
-          <Card
-            name="Eric"
-            subtitle="Instructor"
-            avatar={ericLan}
-            tags={[Tag.CurrentInstructor, Tag.APCSA]}
-          >
-            Eric is a junior at Irvington High School. He is interested in scripting, modeling, and graphic design. In his free time, Eric enjoys hiking, gaming, photography, and pondering life&apos;s big questions.
-            Eric finds solace and inspiration in the great outdoors. Hiking through nature's scenic trails allows him to escape the hustle and bustle of everyday life, connecting him with the serenity and beauty of the natural world.
-          </Card>
-          <Card
-            name="Johnny"
-            subtitle="Instructor"
-            avatar={johnnyWang}
-            tags={[Tag.CurrentInstructor, Tag.Robotics]}
-          >
-            Johnny is a sophomore at Valley Christian High School that likes programming, robotics, and football. He has 2 years of  programming experience and 3 years of robotics experience. Johnny is currently the programming mentor for 2 middle school robotics teams and seeks to pass on his programming knowledge.
-          </Card>
-          <Card
-            name="Michael"
-            subtitle="Advisor, Instructor"
-            avatar={michaelLan}
-            tags={[Tag.CurrentInstructor, Tag.GitGitHub, Tag.APCSA]}
-          >
-            Michael is a second-year at UCLA majoring in computer science and minoring in philosophy. His research interests include functional programming, programming language design, and compilers.
-            He also love software engineering and has 2+ years of experience in full-stack software development and DevOps.
-          </Card>
-          <Card
-            name="Egan"
-            subtitle="Co-President"
-            avatar={eganWang}
-            tags={[Tag.CurrentInstructor, Tag.AMC8]}
-          >
-            Egan is a first-year at UT Austin. He enjoys writing in his spare time, but also takes
-            pleasure in debate. Egan teaches AMC math but has extensive background in other
-            subjects as well such as Java and science.
-          </Card>
-          <Card
-            name="Ben"
-            subtitle="Co-President"
-            avatar={benjaminMann}
-            tags={[Tag.RetiredInstructor, Tag.GameDev]}
-          >
-            Ben is a first-year at UCLA studying computer science and linguistics. He enjoys developing web apps and games, and has been
-            learning programming for 4+ years. He&apos;s experienced in Javascript, Python, C#, and Java.
-            In his free time he like playing badminton and experimenting with things on his computer
-            like digital art, music production, photo manipulation, Android development, along with many other things.
-          </Card>
-          <Card
-            name="Sri"
-            subtitle="Co-Founder"
-            avatar={srinidhiRaghavendran}
-            tags={[Tag.RetiredInstructor, Tag.APCSA, Tag.Python]}
-          >
-            Sri is a second-year at UC Berkeley studying computer science. He enjoys math, computer science, cricket and basketball. He has taken multiple computer science courses at local community colleges and is highly proficient in Java, HTML, CSS and Python. Sri takes pleasure in giving back to his community and his parent’s home country.
-          </Card>
-          <Card
-            name="Ojus"
-            subtitle="Co-Founder"
-            avatar={ojusGarg}
-            tags={[Tag.RetiredInstructor, Tag.APCSA]}
-          >
-            Ojus is a second-year at UC Berkeley studying computer science. He is a STEM-oriented student who has passions in computer science, math, and finance. Ojus loves to give back to his community and help underprivileged kids around the world.
-          </Card>
-          <Card
-            name="Rohan"
-            subtitle="Advisor"
-            avatar={rohanGulati}
-            tags={[Tag.RetiredInstructor, Tag.APCSA]}
-          >
-            Rohan is a second-year at UC Berkeley. His passions include computer science,
-            physics, machine learning, and sustainability. He enjoys engaging in research and staying
-            involved in his community either through service or education. He has taught a variety of
-            topics from pure math to robot automation. As a teacher, his primary goal is to play a role
-            in helping someone discover their own spark or passion.
-          </Card>
+          <ChrisWangCard />
+          <EricLanCard />
+          <JohnnyWangCard />
+          <MichaelLanCard />
+          <EganWangCard />
+          <BenManCard />
+          <RohanGulatiCard />
+          <SrinidhiRaghavendranCard />
+          <OjusGargCard />
         </div>
       </section>
     </main>
