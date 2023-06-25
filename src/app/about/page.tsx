@@ -2,6 +2,7 @@ import Image, { StaticImageData } from 'next/image'
 import people from 'public/people.svg'
 import michaelLan from 'public/michael_lan.jpg'
 import ericLan from 'public/eric_lan.jpg'
+import eganWang from 'public/egan_wang.jpg'
 import johnnyWang from 'public/johnny_wang.jpg'
 import chrisWang from 'public/chris_wang.jpg'
 import srinidhiRaghavendran from 'public/srinidhi_raghavendran.jpg'
@@ -13,6 +14,7 @@ import Balancer from 'react-wrap-balancer'
 enum Tag {
   Python,
   AMC10,
+  AMC8,
   APPhysics1,
   GitGitHub,
   APCSA,
@@ -34,6 +36,8 @@ const tagInfo = (tag: Tag) => {
       return ['bg-violet-600', '👾 Game Development']
     case Tag.AMC10:
       return ['bg-orange-500', '✏️ AMC 10']
+    case Tag.AMC8:
+      return ['bg-orange-500', '✏️ AMC 8']
     case Tag.GitGitHub:
       return ['bg-indigo-500', '🕊️ Git + GitHub']
     case Tag.APCSA:
@@ -142,6 +146,27 @@ const About = () => {
             He also love software engineering and has 2+ years of experience in full-stack software development and DevOps.
           </Card>
           <Card
+            name="Egan"
+            subtitle="Co-President"
+            avatar={eganWang}
+            tags={[Tag.CurrentInstructor, Tag.AMC8]}
+          >
+            Egan Wang is a junior at James E. Taylor High School. He enjoys writing in his spare time, but also takes
+            pleasure in debate. Egan teaches AMC math but has extensive background in other
+            subjects as well such as Java and science.
+          </Card>
+          <Card
+            name="Ben"
+            subtitle="Co-President"
+            avatar={benjaminMann}
+            tags={[Tag.RetiredInstructor, Tag.GameDev]}
+          >
+            Ben is a programmer and creative coder. He enjoys developing web apps and games, and has been
+            learning programming for 4+ years. He&apos;s experienced in Javascript, Python, C#, and Java.
+            In his free time he like playing badminton and experimenting with things on his computer
+            like digital art, music production, photo manipulation, Android development, along with many other things.
+          </Card>
+          <Card
             name="Sri"
             subtitle="Co-Founder"
             avatar={srinidhiRaghavendran}
@@ -156,17 +181,6 @@ const About = () => {
             tags={[Tag.RetiredInstructor, Tag.APCSA]}
           >
             Ojus is a second-year at UC Berkeley. He is a STEM-oriented student who has passions in computer science, math, and finance. Ojus loves to give back to his community and help underprivileged kids around the world.
-          </Card>
-          <Card
-            name="Ben"
-            subtitle="Co-President"
-            avatar={benjaminMann}
-            tags={[Tag.RetiredInstructor, Tag.GameDev]}
-          >
-            Ben is a programmer and creative coder. He enjoys developing web apps and games, and has been
-            learning programming for 4+ years. He&apos;s experienced in Javascript, Python, C#, and Java.
-            In his free time he like playing badminton and experimenting with things on his computer
-            like digital art, music production, photo manipulation, Android development, along with many other things.
           </Card>
           <Card
             name="Rohan"
