@@ -8,7 +8,7 @@ const OjusGargCard = () => (
     avatar={ojusGarg}
     tags={[Tag.RetiredInstructor, Tag.APCSA]}
   >
-    Ojus is a second-year at UC Berkeley studying computer science. He is a STEM-oriented student who has passions in computer science, math, and finance. Ojus loves to give back to his community and help underprivileged kids around the world.
+    Ojus is a third-year at UC Berkeley studying computer science. He is a STEM-oriented student who has passions in computer science, math, and finance. Ojus loves to give back to his community and help underprivileged kids around the world.
   </Card>
 )
 
