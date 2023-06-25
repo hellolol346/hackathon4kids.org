@@ -109,17 +109,16 @@ const About = () => {
         <h1 className="text-3xl font-semibold">Our Instructors</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 mt-3">
           <Card
-            name="Michael"
-            subtitle="Advisor, Instructor"
-            avatar={michaelLan}
-            tags={[Tag.CurrentInstructor, Tag.GitGitHub, Tag.APCSA]}
+            name="Chris"
+            subtitle="Instructor"
+            avatar={chrisWang}
+            tags={[Tag.CurrentInstructor, Tag.AMC10, Tag.APPhysics1]}
           >
-            Michael is a second-year at UCLA majoring in computer science and minoring in philosophy. His research interests include functional programming, programming language design, and compilers.
-            He also love software engineering and has 2+ years of experience in full-stack software development and DevOps.
+            Chris is a junior at Mission San Jose High School. He is interested in a variety of STEM related topics such as mathematics, reading, science, and especially astronomy. He enjoys witnessing the wonders of the natural world and outer space. Chris is also one who is always willing to help out others or the community. During his free time, he likes to hang out with his friends or exercise.
           </Card>
           <Card
             name="Eric"
-            subtitle="Lead Instructor"
+            subtitle="Instructor"
             avatar={ericLan}
             tags={[Tag.CurrentInstructor, Tag.APCSA]}
           >
@@ -134,12 +133,13 @@ const About = () => {
             Johnny is a sophomore at Valley Christian High School that likes programming, robotics, and football. He has 2 years of  programming experience and 3 years of robotics experience. Johnny is currently the programming mentor for 2 middle school robotics teams and seeks to pass on his programming knowledge.
           </Card>
           <Card
-            name="Chris"
-            subtitle="Instructor"
-            avatar={chrisWang}
-            tags={[Tag.CurrentInstructor, Tag.AMC10, Tag.APPhysics1]}
+            name="Michael"
+            subtitle="Advisor, Instructor"
+            avatar={michaelLan}
+            tags={[Tag.CurrentInstructor, Tag.GitGitHub, Tag.APCSA]}
           >
-            Chris is a junior at Mission San Jose High School. He is interested in a variety of STEM related topics such as mathematics, reading, science, and especially astronomy. He enjoys witnessing the wonders of the natural world and outer space. Chris is also one who is always willing to help out others or the community. During his free time, he likes to hang out with his friends or exercise.
+            Michael is a second-year at UCLA majoring in computer science and minoring in philosophy. His research interests include functional programming, programming language design, and compilers.
+            He also love software engineering and has 2+ years of experience in full-stack software development and DevOps.
           </Card>
           <Card
             name="Sri"
