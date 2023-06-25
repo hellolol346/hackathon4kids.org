@@ -127,6 +127,7 @@ const About = () => {
             tags={[Tag.CurrentInstructor, Tag.APCSA]}
           >
             Eric is a junior at Irvington High School. He is interested in scripting, modeling, and graphic design. In his free time, Eric enjoys hiking, gaming, photography, and pondering life&apos;s big questions.
+            Eric finds solace and inspiration in the great outdoors. Hiking through nature's scenic trails allows him to escape the hustle and bustle of everyday life, connecting him with the serenity and beauty of the natural world.
           </Card>
           <Card
             name="Johnny"
@@ -151,7 +152,7 @@ const About = () => {
             avatar={eganWang}
             tags={[Tag.CurrentInstructor, Tag.AMC8]}
           >
-            Egan Wang is a junior at James E. Taylor High School. He enjoys writing in his spare time, but also takes
+            Egan is a first-year at UT Austin. He enjoys writing in his spare time, but also takes
             pleasure in debate. Egan teaches AMC math but has extensive background in other
             subjects as well such as Java and science.
           </Card>
@@ -161,7 +162,7 @@ const About = () => {
             avatar={benjaminMann}
             tags={[Tag.RetiredInstructor, Tag.GameDev]}
           >
-            Ben is a programmer and creative coder. He enjoys developing web apps and games, and has been
+            Ben is a first-year at UCLA studying computer science and linguistics. He enjoys developing web apps and games, and has been
             learning programming for 4+ years. He&apos;s experienced in Javascript, Python, C#, and Java.
             In his free time he like playing badminton and experimenting with things on his computer
             like digital art, music production, photo manipulation, Android development, along with many other things.
@@ -172,7 +173,7 @@ const About = () => {
             avatar={srinidhiRaghavendran}
             tags={[Tag.RetiredInstructor, Tag.APCSA, Tag.Python]}
           >
-            Sri is a second-year at UC Berkeley. He enjoys math, computer science, cricket and basketball. He has taken multiple computer science courses at local community colleges and is highly proficient in Java, HTML, CSS and Python. Sri takes pleasure in giving back to his community and his parent’s home country.
+            Sri is a second-year at UC Berkeley studying computer science. He enjoys math, computer science, cricket and basketball. He has taken multiple computer science courses at local community colleges and is highly proficient in Java, HTML, CSS and Python. Sri takes pleasure in giving back to his community and his parent’s home country.
           </Card>
           <Card
             name="Ojus"
@@ -180,7 +181,7 @@ const About = () => {
             avatar={ojusGarg}
             tags={[Tag.RetiredInstructor, Tag.APCSA]}
           >
-            Ojus is a second-year at UC Berkeley. He is a STEM-oriented student who has passions in computer science, math, and finance. Ojus loves to give back to his community and help underprivileged kids around the world.
+            Ojus is a second-year at UC Berkeley studying computer science. He is a STEM-oriented student who has passions in computer science, math, and finance. Ojus loves to give back to his community and help underprivileged kids around the world.
           </Card>
           <Card
             name="Rohan"
