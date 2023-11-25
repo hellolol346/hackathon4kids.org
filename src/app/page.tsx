@@ -35,7 +35,7 @@ export default function Home() {
           <hr className="mt-8 mb-4" />
           <p className="p-3 rounded-md bg-blue-50">
             <InfoCircledIcon className="text-blue-400 text-md inline-block -translate-y-0.5 mr-2" />
-            Registration for Summer 2023 is open. View our flyer <Link target="_blank" href="/flyer-summer-2023.png" className="underline">here</Link>!
+            Registration for Summer 2023 is open. View our flyer <Link target="_blank" href="/H4K_Coding_Competition_Flyer.png" className="underline">here</Link>!
           </p>
         </div>
         <Image
