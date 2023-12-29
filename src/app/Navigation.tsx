@@ -2,6 +2,7 @@
 
 import * as NavigationMenu from '@radix-ui/react-navigation-menu'
 import Image from 'next/image'
+import Link from 'next/link'
 import logo from 'public/logo.png'
 
 const Navigation = () => (
@@ -26,7 +27,7 @@ const Navigation = () => (
     <NavigationMenu.List className="flex flex-col mt-4 md:mt-0 md:flex-row gap-2 md:gap-8">
       <NavigationMenu.Item>
         <NavigationMenu.Link asChild className="rounded-md px-3 py-1 bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100">
-          <a target="_blank" href="https://bit.ly/h4k-interest" className="font-semibold">Sign up for updates!</a>
+          <Link href="/code.org" className="font-semibold">✍️ Code.org Contest!</Link>
         </NavigationMenu.Link>
       </NavigationMenu.Item>
 
