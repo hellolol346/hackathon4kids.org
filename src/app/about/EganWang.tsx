@@ -4,9 +4,9 @@ import eganWang from 'public/egan_wang.jpg'
 const EganWangCard = () => (
   <Card
     name="Egan"
-    subtitle="Co-President"
+    subtitle="Advisor"
     avatar={eganWang}
-    tags={[Tag.CurrentInstructor, Tag.AMC8]}
+    tags={[Tag.AMC8, Tag.RetiredInstructor]}
   >
     Egan is a first-year in UT Austin&apos;s honors engineering program.
     He enjoys writing in his spare time, but also takes

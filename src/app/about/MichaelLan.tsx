@@ -4,7 +4,7 @@ import michaelLan from 'public/michael_lan.jpg'
 const MichaelLanCard = () => (
   <Card
     name="Michael"
-    subtitle="Advisor, Instructor"
+    subtitle="Advisor"
     avatar={michaelLan}
     tags={[Tag.CurrentInstructor, Tag.GitGitHub, Tag.APCSA]}
   >
