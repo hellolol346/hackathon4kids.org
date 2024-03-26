@@ -2,6 +2,7 @@ import Image from 'next/image'
 import people from 'public/people.svg'
 import Balancer from 'react-wrap-balancer'
 import EricLanCard from './EricLan'
+import KartikBaluCard from './KartikBalu'
 import ChrisWangCard from './ChrisWang'
 import JohnnyWangCard from './JohnnyWang'
 import MichaelLanCard from './MichaelLan'
@@ -39,8 +40,10 @@ const About = () => {
           <ChrisWangCard />
           <EricLanCard />
           <JohnnyWangCard />
+          <KartikBaluCard />
           <MichaelLanCard />
-          <EganWangCard />
+          {/* NOTE: Commenting out <EganWangCard /> to make an even 12 for the grid */}
+          {/* <EganWangCard /> */}
           <BenManCard />
           <RohanGulatiCard />
           <SrinidhiRaghavendranCard />
