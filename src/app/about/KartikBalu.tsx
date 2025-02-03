@@ -12,7 +12,7 @@ const KartikBaluCard = () => (
     Math and Soccer. In his free time, he enjoys hiking and spending time with
     his family. He also enjoys playing video games with his friends. Being with
     friends is something he always prefers which helps balance his high school
-    academic life. TESTING
+    academic life.
   </Card>
 )
 
