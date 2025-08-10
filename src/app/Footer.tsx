@@ -7,7 +7,7 @@ const Footer = () => {
         The fastest way to reach us is to email us at 
         {' '}
         <a href="mailto:hackathon4kidsevent@gmail.com" className="underline text-blue-700">
-          H4K
+          hackathon4kidsevent@gmail.com
         </a>.
       </p>
       <p className="mt-auto text-center text-gray-400">
