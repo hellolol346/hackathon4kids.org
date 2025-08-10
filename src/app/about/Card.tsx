@@ -10,7 +10,9 @@ export const enum Tag {
   CurrentInstructor,
   RetiredInstructor,
   GameDev,
-  Robotics
+  Robotics,
+  IntroToAlgebra,
+  IntroToPhysics
 }
 
 const tagInfo = (tag: Tag) => {
@@ -35,6 +37,10 @@ const tagInfo = (tag: Tag) => {
       return ['bg-fuchsia-400', '🤖 Robotics']
     case Tag.APPhysics1:
       return ['bg-teal-400', '⚙️  AP Physics 1']
+    case Tag.IntroToAlgebra:
+      return ['bg-orange-500', '✏️ Intro To Algebra']
+    case Tag.IntroToPhysics:
+      return ['bg-teal-400', '⚙️  Intro To Physics]
   }
 }
 
