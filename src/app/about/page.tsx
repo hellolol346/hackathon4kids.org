@@ -37,10 +37,10 @@ const About = () => {
       <section id="instructors">
         <h1 className="text-3xl font-semibold">Our Instructors</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10 mt-3">
-          <ChrisWangCard />
-          <EricLanCard />
           <JohnnyWangCard />
           <KartikBaluCard />
+          <ChrisWangCard />
+          <EricLanCard />
           <MichaelLanCard />
           {/* NOTE: Commenting out <EganWangCard /> to make an even 12 for the grid */}
           {/* <EganWangCard /> */}
