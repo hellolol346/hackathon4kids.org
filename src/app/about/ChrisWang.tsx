@@ -4,9 +4,9 @@ import chrisWang from 'public/chris_wang.jpg'
 const ChrisWangCard = () => (
   <Card
     name="Chris"
-    subtitle="Co-President, Instructor"
+    subtitle="Former Leadership"
     avatar={chrisWang}
-    tags={[Tag.CurrentInstructor, Tag.AMC10, Tag.APPhysics1]}
+    tags={[Tag.RetiredInstructor, Tag.AMC10, Tag.APPhysics1]}
   >
     Chris is a junior at Mission San Jose High School. He is interested in a
     variety of STEM related topics such as mathematics, reading, science, and
