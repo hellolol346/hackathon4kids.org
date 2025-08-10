@@ -6,7 +6,7 @@ const VictorJiangCard = () => (
     name="Victor"
     subtitle="Instructor"
     avatar={victorJiang}
-    tags={[Tag.CurrentInstructor]}
+    tags={[Tag.CurrentInstructor, Tag.IntroToPhysics]}
   >
     Victor is a sophomore at Stratford Preparatory Blackford. He enjoys taekwondo and robotics, and has been coding since 6th grade. He has worked with Java, JavaScript, Python and C++.
   </Card>
