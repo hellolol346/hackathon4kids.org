@@ -10,7 +10,9 @@ export const enum Tag {
   CurrentInstructor,
   RetiredInstructor,
   GameDev,
-  Robotics
+  Robotics,
+  IntroToPhysics,
+  IntroToAlgebra
 }
 
 const tagInfo = (tag: Tag) => {
